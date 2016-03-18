@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>{{ name }}</title>
 
-    <link rel="icon" type="image/png" href="{{ baseUrl }}/-/static/favicon.png"/>
+    <link rel="icon" type="image/png" href="{{ baseUrl }}/-/favicon"/>
     <link rel="stylesheet" type="text/css" href="{{ baseUrl }}/-/static/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -39,7 +39,7 @@
           <div class="navbar-left hidden-xs">&nbsp;&nbsp;</div>
 
           <div class="navbar-left setup hidden-xs">
-            <code class="white no-bg">npm config set @sbz:registry {{ baseUrl }}</code><br>
+            <code class="white no-bg">npm config set {{ scope }}registry {{ baseUrl }}</code><br>
           </div>
 
           <!-- login/logout for large devices -->
